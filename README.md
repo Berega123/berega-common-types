@@ -16,7 +16,7 @@ Replace `your-organization` with your actual GitHub organization name.
 
 ```typescript
 // Import the interfaces you need
-import { IApartment, FrontendApartment } from '@berega/common-types';
+import { IApartment, FrontendApartment, IMessageData } from '@berega/common-types';
 
 // For backend applications (using object coordinates)
 import { Document, Schema, model } from 'mongoose';
@@ -56,7 +56,8 @@ function createApartment(data: NewApartment) {
 
 - `IApartment`: The main apartment interface with object coordinates `{latitude, longitude}`
 - `FrontendApartment`: Extension with array coordinates `[longitude, latitude]` for map libraries
-- `NewApartment`: Type for creating new apartments (without ID) 
+- `NewApartment`: Type for creating new apartments (without ID)
+- `IMessageData`: Interface for social media message data including post information, user details, and message content
 
 ## Using with ts-node
 
