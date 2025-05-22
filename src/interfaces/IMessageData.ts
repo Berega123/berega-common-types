@@ -17,6 +17,5 @@ export interface IMessageData {
   id?: number;
   isAlbum?: boolean;
   channelName: string;
-  date: Date;
   importedAt: Date;
 } 
