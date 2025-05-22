@@ -14,6 +14,7 @@ export interface IMessageData {
   views?: string;
   datetime: string;
   groupedId?: string;
+  id?: number;
   isAlbum?: boolean;
   channelName: string;
   date: Date;
