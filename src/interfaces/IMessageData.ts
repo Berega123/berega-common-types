@@ -13,7 +13,6 @@ export interface IMessageData {
   message_video: string[];
   views?: string;
   datetime: string;
-  id?: number;
   groupedId?: string;
   isAlbum?: boolean;
   channelName: string;
