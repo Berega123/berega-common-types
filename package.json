@@ -1,0 +1,26 @@
+{
+  "name": "@berega/common-types",
+  "version": "0.1.0",
+  "description": "Shared TypeScript interfaces for Berega projects",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "typescript",
+    "interfaces",
+    "berega"
+  ],
+  "author": "Berega Team",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+} 
