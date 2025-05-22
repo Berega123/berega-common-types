@@ -57,3 +57,21 @@ function createApartment(data: NewApartment) {
 - `IApartment`: The main apartment interface with object coordinates `{latitude, longitude}`
 - `FrontendApartment`: Extension with array coordinates `[longitude, latitude]` for map libraries
 - `NewApartment`: Type for creating new apartments (without ID) 
+
+## Using with ts-node
+
+If you're using ts-node to run your TypeScript files directly, you might encounter module resolution issues. To fix this, use the provided ts-node configuration:
+
+```bash
+# Install the required dependencies
+npm install --save-dev ts-node tsconfig-paths
+
+# Run your scripts with the custom configuration
+npm run ts-node -- your-script.ts
+```
+
+Or directly with ts-node:
+
+```bash
+ts-node --project tsconfig.node.json your-script.ts
+``` 
