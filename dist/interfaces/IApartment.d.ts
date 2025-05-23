@@ -2,6 +2,7 @@
  * Basic apartment interface that can be used across all projects
  */
 export interface IApartment {
+    _id?: string;
     title?: string;
     description: string;
     price?: number;
