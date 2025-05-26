@@ -17,6 +17,7 @@ export interface IMessageData {
     id?: number;
     isAlbum?: boolean;
     isProcessed?: boolean;
+    processedAt?: Date;
     channelName: string;
     importedAt: Date;
 }
