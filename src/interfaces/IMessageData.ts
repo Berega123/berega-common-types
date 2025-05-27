@@ -4,6 +4,7 @@
 export interface IMessageData {
   data_post: string;
   data_view?: string;
+  date?: Date;
   user_url: string;
   user_photo?: string;
   user_name: string;
