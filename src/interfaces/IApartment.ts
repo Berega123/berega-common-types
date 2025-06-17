@@ -37,6 +37,7 @@ export interface IApartment {
     name?: string;
   };
   listingType?: string; // Type of listing: 'rent', 'sale', or 'unknown'
+  processed?: boolean;
   createdAt?: Date | string;
   updatedAt?: Date | string;
 }
