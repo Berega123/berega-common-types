@@ -38,6 +38,7 @@ export interface IApartment {
     };
     listingType?: string;
     processed?: boolean;
+    secondary?: boolean;
     createdAt?: Date | string;
     updatedAt?: Date | string;
 }

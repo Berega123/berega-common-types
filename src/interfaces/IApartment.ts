@@ -38,6 +38,7 @@ export interface IApartment {
   };
   listingType?: string; // Type of listing: 'rent', 'sale', or 'unknown'
   processed?: boolean;
+  secondary?: boolean;
   createdAt?: Date | string;
   updatedAt?: Date | string;
 }
