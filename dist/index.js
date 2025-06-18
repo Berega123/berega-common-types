@@ -17,3 +17,5 @@ Object.defineProperty(exports, "__esModule", { value: true });
 // Export all interfaces from the package
 __exportStar(require("./interfaces/IApartment"), exports);
 __exportStar(require("./interfaces/IMessageData"), exports);
+__exportStar(require("./interfaces/IEstateBuilding"), exports);
+__exportStar(require("./interfaces/IEstate"), exports);
