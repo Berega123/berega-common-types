@@ -1,3 +1,5 @@
+import { PropertyType } from '../constants/property-types';
+
 /**
  * Basic apartment interface that can be used across all projects
  */
@@ -20,6 +22,7 @@ export interface IApartment {
   kitchenArea?: number;
   balconyArea?: number;
   renovation?: string;
+  propertyType?: PropertyType;
   address?: string;
   city?: string;
   country?: string;
