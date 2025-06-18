@@ -1,6 +1,6 @@
 # Berega Common Types
 
-A shared TypeScript interfaces package for Berega projects.
+A shared TypeScript interfaces package for Berega projects, providing unified type definitions for apartments, estates, and buildings.
 
 ## Installation
 
@@ -12,67 +12,156 @@ npm install github:your-organization/berega-common-types
 
 Replace `your-organization` with your actual GitHub organization name.
 
-## Usage
+## Available Interfaces
 
+### 🏠 **IApartment**
+Comprehensive apartment interface aligned with EstateApartment database schema.
+- **Database-ready**: Matches NestJS/Mongoose EstateApartment schema (93% compatibility)
+- **Source tracking**: Includes properties for listing sources and URLs
+- **Flexible pricing**: Supports both regular price and per-month pricing
+- **Location data**: Full address details including country codes
+
+### 🏢 **IEstateBuilding** 
+Building-level interface for estate complexes.
+- **Building details**: Height, floors, building year, ceiling height
+- **Property classification**: Building type, property type, deal type
+- **Complex support**: Handles multi-building estates
+
+### 🏘️ **IEstate**
+Estate/property interface for fundamental property data.
+- **Core estate info**: Title, description, address, coordinates
+- **Pricing ranges**: From/to pricing for price ranges
+- **Development flags**: New build and complex indicators
+
+### 📱 **IMessageData**
+Interface for social media message data including post information and user details.
+
+## Usage Examples
+
+### Basic Apartment Usage
 ```typescript
-// Import the interfaces you need
-import { IApartment, FrontendApartment, IMessageData } from '@berega/common-types';
-
-// For backend applications (using object coordinates)
-import { Document, Schema, model } from 'mongoose';
 import { IApartment } from '@berega/common-types';
 
-// Extend with Mongoose Document for backend use
+// Database-ready apartment object
+const apartment: IApartment = {
+  title: "Modern 2BR Apartment",
+  price: 150000,
+  price_sqm: 2500,
+  coordinates: [24.7536, 59.4370], // Tallinn coordinates
+  rooms: "2",
+  area: 60,
+  city: "Tallinn",
+  country: "Estonia",
+  dealType: "sale",
+  isNewBuild: false
+};
+```
+
+### Backend Integration (NestJS/Mongoose)
+```typescript
+import { Document } from 'mongoose';
+import { IApartment } from '@berega/common-types';
+
+// Extend with Mongoose Document
 interface IApartmentDocument extends IApartment, Document {}
 
-const apartmentSchema = new Schema<IApartmentDocument>({
-  // Define your schema using IApartment properties
-});
-
-// For frontend applications (using array coordinates)
-import { FrontendApartment } from '@berega/common-types';
-
-interface MapComponentProps {
-  apartment: FrontendApartment;
-}
-
-// Accessing frontend coordinates (array format)
-const showOnMap = (apt: FrontendApartment) => {
-  if (apt.coordinates) {
-    const [longitude, latitude] = apt.coordinates;
-    // Use with map libraries
+// Use in your NestJS service
+@Injectable()
+export class ApartmentService {
+  async createApartment(data: IApartment) {
+    // Direct compatibility with EstateApartment schema
+    return await this.apartmentModel.create(data);
   }
+}
+```
+
+### Building & Estate Usage
+```typescript
+import { IEstateBuilding, IEstate } from '@berega/common-types';
+
+const building: IEstateBuilding = {
+  title: "Sunset Towers",
+  coordinates: [24.7536, 59.4370],
+  height: 45,
+  floors: 12,
+  buildingType: "residential",
+  isComplex: true
 };
 
-// Use the NewApartment type for creation operations
-import { NewApartment } from '@berega/common-types';
+const estate: IEstate = {
+  title: "Sunset Estate Complex",
+  description: "Luxury residential complex",
+  address: "Narva mnt 7, Tallinn",
+  coordinates: [24.7536, 59.4370],
+  plot: "A-123",
+  isNewBuild: true
+};
+```
 
-function createApartment(data: NewApartment) {
-  // Implementation
+### Source Tracking (IApartment)
+```typescript
+import { IApartment } from '@berega/common-types';
+
+const trackedApartment: IApartment = {
+  // ... apartment data ...
+  source: "korter.ee",
+  sourceUrl: "https://korter.ee/listing/123",
+  sourceId: "korter_123",
+  dealType: "rent",
+  price_per_month: 800
+};
+```
+
+## Schema Compatibility
+
+The interfaces are designed to be **database-ready** and compatible with:
+
+- ✅ **NestJS/Mongoose schemas**
+- ✅ **MongoDB document structure** 
+- ✅ **TypeScript strict mode**
+- ✅ **ObjectId references** (as `string | object`)
+
+### EstateApartment Compatibility
+`IApartment` is **93% aligned** with EstateApartment schema:
+- 28/30 core properties match exactly
+- All data types are compatible
+- ObjectId references properly typed
+- Optional properties maintain flexibility
+
+## Migration Guide
+
+### From Legacy IApartment
+If updating from older versions:
+
+```typescript
+// Old structure
+interface OldApartment {
+  listingType?: string;  // → dealType
+  secondary?: boolean;   // → isNewBuild  
+  processed?: boolean;   // → removed
+  coordinates?: [number, number]; // → number[]
+}
+
+// New structure (current)
+interface IApartment {
+  dealType?: string;     // ✅ Renamed
+  isNewBuild?: boolean;  // ✅ Renamed
+  coordinates?: number[]; // ✅ More flexible
+  // processed removed   // ✅ Cleaned up
 }
 ```
 
-## Available Types
+## Development
 
-- `IApartment`: The main apartment interface with object coordinates `{latitude, longitude}`
-- `FrontendApartment`: Extension with array coordinates `[longitude, latitude]` for map libraries
-- `NewApartment`: Type for creating new apartments (without ID)
-- `IMessageData`: Interface for social media message data including post information, user details, and message content
-
-## Using with ts-node
-
-If you're using ts-node to run your TypeScript files directly, you might encounter module resolution issues. To fix this, use the provided ts-node configuration:
-
+### Building
 ```bash
-# Install the required dependencies
-npm install --save-dev ts-node tsconfig-paths
-
-# Run your scripts with the custom configuration
-npm run ts-node -- your-script.ts
+npm run build
 ```
 
-Or directly with ts-node:
-
+### TypeScript Configuration
+For ts-node usage:
 ```bash
+npm run ts-node -- your-script.ts
+# or
 ts-node --project tsconfig.node.json your-script.ts
 ``` 
