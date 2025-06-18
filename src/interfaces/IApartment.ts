@@ -5,20 +5,20 @@ export interface IApartment {
   _id?: string;
   title: string;
   description?: string; // Main description extracted by LLM
-  price?: number;
-  price_sqm?: number;
+  price: number;
+  price_sqm: number;
   currency?: string;
   coordinates?: number[];
   tags?: string[];
   amenities?: string[];
   rooms?: string;
-  bathrooms?: number | string;
-  floor?: number | string;
-  totalFloors?: number | string;
-  area?: number | string;
-  livingArea?: number | string;
-  kitchenArea?: number | string;
-  balconyArea?: number | string;
+  bathrooms?: string;
+  floor?: number;
+  totalFloors?: number;
+  area?: number;
+  livingArea?: number;
+  kitchenArea?: number;
+  balconyArea?: number;
   renovation?: string;
   address?: string;
   images?: string[];
@@ -31,11 +31,9 @@ export interface IApartment {
   sourceUrl?: string; // The URL of the original listing
   sourcePostId?: any; // Optional: to link to the original post
   sourceId?: string; // Alternative ID from the source
-  estate?: object;
-  building?: object;
-  author?: {
-    name?: string;
-  };
+  estate?: string | object; // ObjectId reference to Estate
+  building?: string | object; // ObjectId reference to EstateBuilding
+  author?: string | object; // ObjectId reference to User
   listingType?: string; // Type of listing: 'rent', 'sale', or 'unknown'
   processed?: boolean;
   secondary?: boolean;
