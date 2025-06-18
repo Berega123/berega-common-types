@@ -21,8 +21,13 @@ export interface IApartment {
   balconyArea?: number;
   renovation?: string;
   address?: string;
-  images?: string[];
   city?: string;
+  country?: string;
+  city_code?: string;
+  country_code?: string;
+  price_per_month?: number;
+  ceilingHeight?: number;
+  images?: string[];
   contactPhone?: string;
   contactInfo?: string;
   district?: string;
@@ -34,9 +39,8 @@ export interface IApartment {
   estate?: string | object; // ObjectId reference to Estate
   building?: string | object; // ObjectId reference to EstateBuilding
   author?: string | object; // ObjectId reference to User
-  listingType?: string; // Type of listing: 'rent', 'sale', or 'unknown'
-  processed?: boolean;
-  secondary?: boolean;
+  dealType?: string; // Type of deal: 'rent', 'sale', etc.
+  isNewBuild?: boolean;
   createdAt?: Date | string;
   updatedAt?: Date | string;
 }
