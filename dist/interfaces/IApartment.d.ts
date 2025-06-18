@@ -1,4 +1,4 @@
-import { PropertyType } from '../constants/property-types';
+import { PropertyType, DealType, StatusType } from '../constants/property-types';
 /**
  * Basic apartment interface that can be used across all projects
  */
@@ -41,7 +41,8 @@ export interface IApartment {
     estate?: string | object;
     building?: string | object;
     author?: string | object;
-    dealType?: string;
+    dealType?: DealType;
+    status?: StatusType;
     isNewBuild?: boolean;
     createdAt?: Date | string;
     updatedAt?: Date | string;
