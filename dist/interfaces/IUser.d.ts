@@ -12,6 +12,7 @@ export interface IUser {
     contactTelegram?: string;
     contactWhatsapp?: string;
     contactViber?: string;
+    contactSite?: string;
     image?: string;
     description?: string;
     data?: string;
