@@ -3,6 +3,7 @@ export * from './interfaces/IApartment';
 export * from './interfaces/IMessageData';
 export * from './interfaces/IEstateBuilding';
 export * from './interfaces/IEstate';
+export * from './interfaces/IUser';
 
 // Export constants
 export { PropertyTypes, DealTypes, StatusTypes } from './constants/property-types';

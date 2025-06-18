@@ -20,6 +20,7 @@ __exportStar(require("./interfaces/IApartment"), exports);
 __exportStar(require("./interfaces/IMessageData"), exports);
 __exportStar(require("./interfaces/IEstateBuilding"), exports);
 __exportStar(require("./interfaces/IEstate"), exports);
+__exportStar(require("./interfaces/IUser"), exports);
 // Export constants
 var property_types_1 = require("./constants/property-types");
 Object.defineProperty(exports, "PropertyTypes", { enumerable: true, get: function () { return property_types_1.PropertyTypes; } });
