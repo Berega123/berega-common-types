@@ -3,15 +3,15 @@
  */
 export interface IApartment {
     _id?: string;
-    title?: string;
-    description: string;
+    title: string;
+    description?: string;
     price?: number;
     price_sqm?: number;
     currency?: string;
-    coordinates?: [number, number];
+    coordinates?: number[];
     tags?: string[];
     amenities?: string[];
-    rooms?: number | string;
+    rooms?: string;
     bathrooms?: number | string;
     floor?: number | string;
     totalFloors?: number | string;
