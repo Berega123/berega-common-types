@@ -1,3 +1,5 @@
+import { PropertyType, DealType, StatusType } from '../constants/property-types';
+
 /**
  * Estate interface based on NestJS/Mongoose schema
  */
@@ -20,9 +22,9 @@ export interface IEstate {
   contactPhone?: string;
   area?: number;
   plot: string;
-  propertyType?: string;
-  dealType?: string;
-  status?: string;
+  propertyType?: PropertyType;
+  dealType?: DealType;
+  status?: StatusType;
   isComplex?: boolean;
   isNewBuild?: boolean;
   images?: string[];

@@ -1,3 +1,5 @@
+import { PropertyType, DealType, StatusType } from '../constants/property-types';
+
 /**
  * Estate building interface based on NestJS/Mongoose schema
  */
@@ -25,9 +27,9 @@ export interface IEstateBuilding {
   buildingYear?: number;
   ceilingHeight?: number;
   buildingType?: string;
-  propertyType?: string;
-  dealType?: string;
-  status?: string;
+  propertyType?: PropertyType;
+  dealType?: DealType;
+  status?: StatusType;
   isComplex?: boolean;
   contactPhone?: string;
   tags?: string[];
@@ -40,10 +42,4 @@ export interface IEstateBuilding {
   oldData?: string;
   createdAt?: Date | string;
   updatedAt?: Date | string;
-}
-
-// Type definitions for the enum values referenced in the schema
-export type BuildingType = string;
-export type PropertyType = string;
-export type DealType = string;
-export type StatusType = string; 
+} 
