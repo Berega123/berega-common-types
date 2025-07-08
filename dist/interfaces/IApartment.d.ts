@@ -44,6 +44,7 @@ export interface IApartment {
     dealType?: DealType;
     status?: StatusType;
     isNewBuild?: boolean;
+    isExported?: boolean;
     createdAt?: Date | string;
     updatedAt?: Date | string;
 }

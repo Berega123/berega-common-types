@@ -45,6 +45,7 @@ export interface IApartment {
   dealType?: DealType; // Type of deal: 'rent', 'sale', etc.
   status?: StatusType; // Status of the apartment listing
   isNewBuild?: boolean;
+  isExported?: boolean;
   createdAt?: Date | string;
   updatedAt?: Date | string;
 }
