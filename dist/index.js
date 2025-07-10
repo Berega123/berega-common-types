@@ -17,6 +17,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
 // Export all interfaces from the package
 __exportStar(require("./interfaces/IApartment"), exports);
+__exportStar(require("./interfaces/ICatalog"), exports);
 __exportStar(require("./interfaces/IMessageData"), exports);
 __exportStar(require("./interfaces/IEstateBuilding"), exports);
 __exportStar(require("./interfaces/IEstate"), exports);
