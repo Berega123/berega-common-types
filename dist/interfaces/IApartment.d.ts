@@ -28,6 +28,7 @@ export interface IApartment {
     city_code?: string;
     country_code?: string;
     price_per_month?: number;
+    price_per_day?: number;
     ceilingHeight?: number;
     images?: string[];
     contactPhone?: string;
