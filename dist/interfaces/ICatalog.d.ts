@@ -7,6 +7,7 @@ export interface ICatalog {
     author: string;
     description: string;
     list?: string[];
+    isExported?: boolean;
     createdAt?: Date | string;
     updatedAt?: Date | string;
 }

@@ -7,6 +7,7 @@ export interface ICatalog {
   author: string; // MongoId reference to User
   description: string;
   list?: string[];
+  isExported?: boolean;
   createdAt?: Date | string;
   updatedAt?: Date | string;
 } 
