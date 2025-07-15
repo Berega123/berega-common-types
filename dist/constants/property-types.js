@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
+exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
 exports.PropertyTypes = [
     'apartment',
     'house',
@@ -29,4 +29,18 @@ exports.StatusTypes = [
     'deleted',
     'under_moderation',
     'completed'
+];
+// Room types for apartments
+exports.RoomTypes = [
+    '1+1',
+    'studio',
+    '2+1',
+    '1',
+    '2',
+    '3',
+    '3+1',
+    '4+1',
+    '4+',
+    '5+',
+    'more',
 ];

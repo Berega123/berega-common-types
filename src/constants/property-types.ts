@@ -35,3 +35,20 @@ export const StatusTypes = [
 ] as const;
 
 export type StatusType = typeof StatusTypes[number]; 
+
+// Room types for apartments
+export const RoomTypes = [
+  '1+1',
+  'studio',
+  '2+1',
+  '1',
+  '2',
+  '3',
+  '3+1',
+  '4+1',
+  '4+',
+  '5+',
+  'more',
+] as const;
+
+export type RoomTypes = typeof RoomTypes[number]; 

@@ -1,4 +1,4 @@
-import { PropertyType, DealType, StatusType } from '../constants/property-types';
+import { PropertyType, DealType, StatusType, RoomTypes } from '../constants/property-types';
 /**
  * Basic apartment interface that can be used across all projects
  */
@@ -12,7 +12,7 @@ export interface IApartment {
     coordinates?: number[];
     tags?: string[];
     amenities?: string[];
-    rooms?: string;
+    rooms?: RoomTypes;
     bathrooms?: string;
     floor?: number;
     totalFloors?: number;
