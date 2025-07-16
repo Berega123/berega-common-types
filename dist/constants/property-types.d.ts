@@ -4,5 +4,5 @@ export declare const DealTypes: readonly ["sale", "rent", "investment"];
 export type DealType = typeof DealTypes[number];
 export declare const StatusTypes: readonly ["active", "pending", "draft", "sold", "reserved", "archived", "deleted", "under_moderation", "completed"];
 export type StatusType = typeof StatusTypes[number];
-export declare const RoomTypes: readonly ["1+1", "studio", "2+1", "1", "2", "3", "3+1", "4+1", "4+", "5+", "more"];
+export declare const RoomTypes: readonly ["1+1", "studio", "2+1", "3+1", "4+1", "4+", "5+", "more"];
 export type RoomTypes = typeof RoomTypes[number];
