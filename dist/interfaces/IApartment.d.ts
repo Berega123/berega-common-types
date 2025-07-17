@@ -32,6 +32,8 @@ export interface IApartment {
     ceilingHeight?: number;
     images?: string[];
     contactPhone?: string;
+    contactTelegram?: string;
+    contactWhatsapp?: string;
     contactInfo?: string;
     district?: string;
     features?: string[];
