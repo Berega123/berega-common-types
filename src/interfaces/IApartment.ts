@@ -1,40 +1,68 @@
-import { PropertyType, DealType, StatusType, RoomTypes } from '../constants/property-types';
+import { 
+  PropertyType, 
+  DealType, 
+  StatusType, 
+  RoomTypes, 
+  BathroomType, 
+  RenovationType 
+} from '../constants/property-types';
 
 /**
  * Basic apartment interface that can be used across all projects
  */
 export interface IApartment {
-  _id?: string;
+  identifier?: string;
   title: string;
-  description?: string; // Main description extracted by LLM
+  description?: string;
+  address?: string;
+  city?: string;
+  country?: string;
+  coordinates?: number[];
   price: number;
   price_sqm: number;
-  currency?: string;
-  coordinates?: number[];
+  price_per_month?: number;
+  price_per_day?: number;
   tags?: string[];
   amenities?: string[];
   rooms?: RoomTypes;
-  bathrooms?: string;
+  bathroom?: BathroomType;
+  bathroomCount?: number;
+  buildingYear?: number;
+  buildingType?: string;
+  buildingClass?: string;
+  coastline?: string;
+  contactPhone?: string;
+  contactTelegram?: string;
+  contactWhatsapp?: string;
   floor?: number;
-  totalFloors?: number;
   area?: number;
   livingArea?: number;
   kitchenArea?: number;
   balconyArea?: number;
-  renovation?: string;
+  ceilingHeight?: number;
+  renovation?: RenovationType;
+  totalFloors?: number;
   propertyType?: PropertyType;
-  address?: string;
-  city?: string;
-  country?: string;
+  isNewBuild?: boolean;
+  isFromDeveloper?: boolean;
+  dealType?: DealType;
+  status?: StatusType;
+  images?: string[];
+  estate?: string | object; // ObjectId reference to Estate
+  building?: string | object; // ObjectId reference to EstateBuilding
+  author?: string | object; // ObjectId reference to User
+  developer?: string | object; // ObjectId reference to Developer
+  oldDataAuthor?: string;
+  oldDataId?: string;
+  oldData?: string;
+  analyticsViews?: number;
+  analyticsFavorites?: number;
+  commission?: number;
+  
+  // Optional fields for compatibility/external sources
+  currency?: string;
   city_code?: string;
   country_code?: string;
-  price_per_month?: number;
-  price_per_day?: number;
-  ceilingHeight?: number;
-  images?: string[];
-  contactPhone?: string;
-  contactTelegram?: string;
-  contactWhatsapp?: string;
   contactInfo?: string;
   district?: string;
   features?: string[];
@@ -42,13 +70,8 @@ export interface IApartment {
   sourceUrl?: string; // The URL of the original listing
   sourcePostId?: any; // Optional: to link to the original post
   sourceId?: string; // Alternative ID from the source
-  estate?: string | object; // ObjectId reference to Estate
-  building?: string | object; // ObjectId reference to EstateBuilding
-  author?: string | object; // ObjectId reference to User
-  dealType?: DealType; // Type of deal: 'rent', 'sale', etc.
-  status?: StatusType; // Status of the apartment listing
-  isNewBuild?: boolean;
   isExported?: boolean;
+  
   createdAt?: Date | string;
   updatedAt?: Date | string;
 }

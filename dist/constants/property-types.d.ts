@@ -6,3 +6,11 @@ export declare const StatusTypes: readonly ["active", "pending", "draft", "sold"
 export type StatusType = typeof StatusTypes[number];
 export declare const RoomTypes: readonly ["1+1", "studio", "2+1", "3+1", "4+1", "4+", "5+", "more"];
 export type RoomTypes = typeof RoomTypes[number];
+export declare const BathroomTypes: readonly ["1", "2", "3", "4+", "shared", "none"];
+export type BathroomType = typeof BathroomTypes[number];
+export declare const RenovationTypes: readonly ["none", "needs_renovation", "partial", "designer", "euro", "luxury", "modern", "classic"];
+export type RenovationType = typeof RenovationTypes[number];
+export declare const TagOptions: readonly ["sea_view", "mountain_view", "city_view", "garden_view", "pool", "gym", "sauna", "balcony", "terrace", "parking", "garage", "elevator", "security", "furnished", "pets_allowed", "smoking_allowed", "internet", "air_conditioning", "heating", "fireplace", "dishwasher", "washing_machine", "new_building", "historic_building"];
+export type TagOption = typeof TagOptions[number];
+export declare const AmenitiesOptions: readonly ["pool", "gym", "spa", "sauna", "tennis_court", "basketball_court", "playground", "garden", "rooftop", "concierge", "security", "parking", "garage", "elevator", "laundry", "storage", "bike_storage", "conference_room", "coworking_space", "restaurant", "bar", "shop", "pharmacy", "medical_center"];
+export type AmenitiesOption = typeof AmenitiesOptions[number];

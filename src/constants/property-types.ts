@@ -48,4 +48,90 @@ export const RoomTypes = [
   'more',
 ] as const;
 
-export type RoomTypes = typeof RoomTypes[number]; 
+export type RoomTypes = typeof RoomTypes[number];
+
+// Bathroom types
+export const BathroomTypes = [
+  '1',
+  '2',
+  '3',
+  '4+',
+  'shared',
+  'none'
+] as const;
+
+export type BathroomType = typeof BathroomTypes[number];
+
+// Renovation types
+export const RenovationTypes = [
+  'none',
+  'needs_renovation',
+  'partial',
+  'designer',
+  'euro',
+  'luxury',
+  'modern',
+  'classic'
+] as const;
+
+export type RenovationType = typeof RenovationTypes[number];
+
+// Tag options
+export const TagOptions = [
+  'sea_view',
+  'mountain_view',
+  'city_view',
+  'garden_view',
+  'pool',
+  'gym',
+  'sauna',
+  'balcony',
+  'terrace',
+  'parking',
+  'garage',
+  'elevator',
+  'security',
+  'furnished',
+  'pets_allowed',
+  'smoking_allowed',
+  'internet',
+  'air_conditioning',
+  'heating',
+  'fireplace',
+  'dishwasher',
+  'washing_machine',
+  'new_building',
+  'historic_building'
+] as const;
+
+export type TagOption = typeof TagOptions[number];
+
+// Amenities options
+export const AmenitiesOptions = [
+  'pool',
+  'gym',
+  'spa',
+  'sauna',
+  'tennis_court',
+  'basketball_court',
+  'playground',
+  'garden',
+  'rooftop',
+  'concierge',
+  'security',
+  'parking',
+  'garage',
+  'elevator',
+  'laundry',
+  'storage',
+  'bike_storage',
+  'conference_room',
+  'coworking_space',
+  'restaurant',
+  'bar',
+  'shop',
+  'pharmacy',
+  'medical_center'
+] as const;
+
+export type AmenitiesOption = typeof AmenitiesOptions[number]; 

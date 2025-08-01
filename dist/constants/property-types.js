@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
+exports.AmenitiesOptions = exports.TagOptions = exports.RenovationTypes = exports.BathroomTypes = exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
 exports.PropertyTypes = [
     'apartment',
     'house',
@@ -40,4 +40,78 @@ exports.RoomTypes = [
     '4+',
     '5+',
     'more',
+];
+// Bathroom types
+exports.BathroomTypes = [
+    '1',
+    '2',
+    '3',
+    '4+',
+    'shared',
+    'none'
+];
+// Renovation types
+exports.RenovationTypes = [
+    'none',
+    'needs_renovation',
+    'partial',
+    'designer',
+    'euro',
+    'luxury',
+    'modern',
+    'classic'
+];
+// Tag options
+exports.TagOptions = [
+    'sea_view',
+    'mountain_view',
+    'city_view',
+    'garden_view',
+    'pool',
+    'gym',
+    'sauna',
+    'balcony',
+    'terrace',
+    'parking',
+    'garage',
+    'elevator',
+    'security',
+    'furnished',
+    'pets_allowed',
+    'smoking_allowed',
+    'internet',
+    'air_conditioning',
+    'heating',
+    'fireplace',
+    'dishwasher',
+    'washing_machine',
+    'new_building',
+    'historic_building'
+];
+// Amenities options
+exports.AmenitiesOptions = [
+    'pool',
+    'gym',
+    'spa',
+    'sauna',
+    'tennis_court',
+    'basketball_court',
+    'playground',
+    'garden',
+    'rooftop',
+    'concierge',
+    'security',
+    'parking',
+    'garage',
+    'elevator',
+    'laundry',
+    'storage',
+    'bike_storage',
+    'conference_room',
+    'coworking_space',
+    'restaurant',
+    'bar',
+    'shop',
+    'pharmacy',
+    'medical_center'
 ];
