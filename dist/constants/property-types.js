@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AmenitiesOptions = exports.TagOptions = exports.RenovationTypes = exports.BathroomTypes = exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
+exports.BuildingTypes = exports.AmenitiesOptions = exports.TagOptions = exports.RenovationTypes = exports.BathroomTypes = exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
 exports.PropertyTypes = [
     'apartment',
     'house',
@@ -114,4 +114,16 @@ exports.AmenitiesOptions = [
     'shop',
     'pharmacy',
     'medical_center'
+];
+// Building types
+exports.BuildingTypes = [
+    'residential',
+    'commercial',
+    'mixed_use',
+    'industrial',
+    'office',
+    'retail',
+    'hotel',
+    'warehouse',
+    'other'
 ];

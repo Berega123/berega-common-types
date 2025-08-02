@@ -14,7 +14,7 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ApartmentRoomType = exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
+exports.BuildingTypes = exports.AmenitiesOptions = exports.TagOptions = exports.RenovationTypes = exports.BathroomTypes = exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
 // Export all interfaces from the package
 __exportStar(require("./interfaces/IApartment"), exports);
 __exportStar(require("./interfaces/ICatalog"), exports);
@@ -28,5 +28,8 @@ Object.defineProperty(exports, "PropertyTypes", { enumerable: true, get: functio
 Object.defineProperty(exports, "DealTypes", { enumerable: true, get: function () { return property_types_1.DealTypes; } });
 Object.defineProperty(exports, "StatusTypes", { enumerable: true, get: function () { return property_types_1.StatusTypes; } });
 Object.defineProperty(exports, "RoomTypes", { enumerable: true, get: function () { return property_types_1.RoomTypes; } });
-var property_types_2 = require("./constants/property-types");
-Object.defineProperty(exports, "ApartmentRoomType", { enumerable: true, get: function () { return property_types_2.RoomTypes; } });
+Object.defineProperty(exports, "BathroomTypes", { enumerable: true, get: function () { return property_types_1.BathroomTypes; } });
+Object.defineProperty(exports, "RenovationTypes", { enumerable: true, get: function () { return property_types_1.RenovationTypes; } });
+Object.defineProperty(exports, "TagOptions", { enumerable: true, get: function () { return property_types_1.TagOptions; } });
+Object.defineProperty(exports, "AmenitiesOptions", { enumerable: true, get: function () { return property_types_1.AmenitiesOptions; } });
+Object.defineProperty(exports, "BuildingTypes", { enumerable: true, get: function () { return property_types_1.BuildingTypes; } });

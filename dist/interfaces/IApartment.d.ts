@@ -1,8 +1,9 @@
 import { PropertyType, DealType, StatusType, RoomTypes, BathroomType, RenovationType } from '../constants/property-types';
 /**
- * Basic apartment interface that can be used across all projects
+ * Estate apartment interface that matches NestJS/Mongoose EstateApartment schema
  */
 export interface IApartment {
+    _id?: string;
     identifier?: string;
     title: string;
     description?: string;
@@ -40,9 +41,9 @@ export interface IApartment {
     dealType?: DealType;
     status?: StatusType;
     images?: string[];
-    estate?: string | object;
-    building?: string | object;
-    author?: string | object;
+    estate: string | object;
+    building: string | object;
+    author: string | object;
     developer?: string | object;
     oldDataAuthor?: string;
     oldDataId?: string;
@@ -50,6 +51,8 @@ export interface IApartment {
     analyticsViews?: number;
     analyticsFavorites?: number;
     commission?: number;
+    createdAt?: Date | string;
+    updatedAt?: Date | string;
     currency?: string;
     city_code?: string;
     country_code?: string;
@@ -61,6 +64,4 @@ export interface IApartment {
     sourcePostId?: any;
     sourceId?: string;
     isExported?: boolean;
-    createdAt?: Date | string;
-    updatedAt?: Date | string;
 }

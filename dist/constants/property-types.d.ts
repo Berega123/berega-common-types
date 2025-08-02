@@ -14,3 +14,5 @@ export declare const TagOptions: readonly ["sea_view", "mountain_view", "city_vi
 export type TagOption = typeof TagOptions[number];
 export declare const AmenitiesOptions: readonly ["pool", "gym", "spa", "sauna", "tennis_court", "basketball_court", "playground", "garden", "rooftop", "concierge", "security", "parking", "garage", "elevator", "laundry", "storage", "bike_storage", "conference_room", "coworking_space", "restaurant", "bar", "shop", "pharmacy", "medical_center"];
 export type AmenitiesOption = typeof AmenitiesOptions[number];
+export declare const BuildingTypes: readonly ["residential", "commercial", "mixed_use", "industrial", "office", "retail", "hotel", "warehouse", "other"];
+export type BuildingType = typeof BuildingTypes[number];

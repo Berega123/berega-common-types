@@ -134,4 +134,19 @@ export const AmenitiesOptions = [
   'medical_center'
 ] as const;
 
-export type AmenitiesOption = typeof AmenitiesOptions[number]; 
+export type AmenitiesOption = typeof AmenitiesOptions[number];
+
+// Building types
+export const BuildingTypes = [
+  'residential',
+  'commercial',
+  'mixed_use',
+  'industrial',
+  'office',
+  'retail',
+  'hotel',
+  'warehouse',
+  'other'
+] as const;
+
+export type BuildingType = typeof BuildingTypes[number]; 

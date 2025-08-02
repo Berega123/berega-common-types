@@ -8,9 +8,10 @@ import {
 } from '../constants/property-types';
 
 /**
- * Basic apartment interface that can be used across all projects
+ * Estate apartment interface that matches NestJS/Mongoose EstateApartment schema
  */
 export interface IApartment {
+  _id?: string;
   identifier?: string;
   title: string;
   description?: string;
@@ -48,9 +49,9 @@ export interface IApartment {
   dealType?: DealType;
   status?: StatusType;
   images?: string[];
-  estate?: string | object; // ObjectId reference to Estate
-  building?: string | object; // ObjectId reference to EstateBuilding
-  author?: string | object; // ObjectId reference to User
+  estate: string | object; // ObjectId reference to Estate
+  building: string | object; // ObjectId reference to EstateBuilding
+  author: string | object; // ObjectId reference to User
   developer?: string | object; // ObjectId reference to Developer
   oldDataAuthor?: string;
   oldDataId?: string;
@@ -58,6 +59,8 @@ export interface IApartment {
   analyticsViews?: number;
   analyticsFavorites?: number;
   commission?: number;
+  createdAt?: Date | string;
+  updatedAt?: Date | string;
   
   // Optional fields for compatibility/external sources
   currency?: string;
@@ -71,7 +74,4 @@ export interface IApartment {
   sourcePostId?: any; // Optional: to link to the original post
   sourceId?: string; // Alternative ID from the source
   isExported?: boolean;
-  
-  createdAt?: Date | string;
-  updatedAt?: Date | string;
 }

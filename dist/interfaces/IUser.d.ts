@@ -1,5 +1,5 @@
 /**
- * Basic user interface that can be used across all projects
+ * User interface that matches NestJS/Mongoose User schema
  */
 export interface IUser {
     _id?: string;
@@ -12,9 +12,9 @@ export interface IUser {
     contactTelegram?: string;
     contactWhatsapp?: string;
     contactViber?: string;
-    contactSite?: string;
     image?: string;
     description?: string;
+    rating?: number;
     data?: string;
     refreshTokens?: string[];
     role?: string;
