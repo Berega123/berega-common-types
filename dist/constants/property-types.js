@@ -15,6 +15,7 @@ exports.PropertyTypes = [
     'land',
     'industrial',
     'other',
+    'newbuild'
 ];
 // Deal types
 exports.DealTypes = ['sale', 'rent', 'investment'];
@@ -43,23 +44,18 @@ exports.RoomTypes = [
 ];
 // Bathroom types
 exports.BathroomTypes = [
-    '1',
-    '2',
-    '3',
-    '4+',
-    'shared',
+    'splited',
+    'split',
+    'combined',
     'none'
 ];
 // Renovation types
 exports.RenovationTypes = [
-    'none',
-    'needs_renovation',
-    'partial',
-    'designer',
-    'euro',
-    'luxury',
-    'modern',
-    'classic'
+    'shell_condition',
+    'white_box',
+    'green_box',
+    'standard',
+    'turnkey',
 ];
 // Tag options
 exports.TagOptions = [
@@ -119,11 +115,10 @@ exports.AmenitiesOptions = [
 exports.BuildingTypes = [
     'residential',
     'commercial',
-    'mixed_use',
-    'industrial',
-    'office',
-    'retail',
-    'hotel',
-    'warehouse',
-    'other'
+    'mixed',
+    'apartment',
+    'monolithic',
+    'brick',
+    'panel',
+    'block',
 ];

@@ -12,6 +12,7 @@ export const PropertyTypes = [
   'land',
   'industrial',
   'other',
+  'newbuild'
 ] as const;
 
 export type PropertyType = typeof PropertyTypes[number];
@@ -52,11 +53,9 @@ export type RoomTypes = typeof RoomTypes[number];
 
 // Bathroom types
 export const BathroomTypes = [
-  '1',
-  '2',
-  '3',
-  '4+',
-  'shared',
+  'splited',
+  'split',
+  'combined',
   'none'
 ] as const;
 
@@ -64,14 +63,11 @@ export type BathroomType = typeof BathroomTypes[number];
 
 // Renovation types
 export const RenovationTypes = [
-  'none',
-  'needs_renovation',
-  'partial',
-  'designer',
-  'euro',
-  'luxury',
-  'modern',
-  'classic'
+  'shell_condition',
+  'white_box',
+  'green_box',
+  'standard',
+  'turnkey',
 ] as const;
 
 export type RenovationType = typeof RenovationTypes[number];
@@ -140,13 +136,12 @@ export type AmenitiesOption = typeof AmenitiesOptions[number];
 export const BuildingTypes = [
   'residential',
   'commercial',
-  'mixed_use',
-  'industrial',
-  'office',
-  'retail',
-  'hotel',
-  'warehouse',
-  'other'
+  'mixed',
+  'apartment',
+  'monolithic',
+  'brick',
+  'panel',
+  'block',
 ] as const;
 
 export type BuildingType = typeof BuildingTypes[number]; 
