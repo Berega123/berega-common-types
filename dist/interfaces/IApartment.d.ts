@@ -45,6 +45,7 @@ export interface IApartment {
     building: string | object;
     author: string | object;
     developer?: string | object;
+    duplicateOf?: string | object;
     oldDataAuthor?: string;
     oldDataId?: string;
     oldData?: string;
