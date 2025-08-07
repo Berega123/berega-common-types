@@ -144,4 +144,15 @@ export const BuildingTypes = [
   'block',
 ] as const;
 
-export type BuildingType = typeof BuildingTypes[number]; 
+export type BuildingType = typeof BuildingTypes[number];
+
+// Apartment sources
+export const ApartmentSources = [
+  'telegram',
+  'korter',
+  'ss.ge',
+  'myhome',
+  '', // other (empty string)
+] as const;
+
+export type ApartmentSource = typeof ApartmentSources[number]; 

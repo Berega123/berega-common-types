@@ -16,7 +16,8 @@ export {
   RenovationTypes, 
   TagOptions, 
   AmenitiesOptions, 
-  BuildingTypes 
+  BuildingTypes,
+  ApartmentSources 
 } from './constants/property-types';
 
 // Export types
@@ -29,5 +30,6 @@ export type {
   RenovationType, 
   TagOption, 
   AmenitiesOption, 
-  BuildingType 
+  BuildingType,
+  ApartmentSource 
 } from './constants/property-types';

@@ -1,4 +1,4 @@
-import { PropertyType, DealType, StatusType, RoomTypes, BathroomType, RenovationType } from '../constants/property-types';
+import { PropertyType, DealType, StatusType, RoomTypes, BathroomType, RenovationType, ApartmentSource } from '../constants/property-types';
 /**
  * Estate apartment interface that matches NestJS/Mongoose EstateApartment schema
  */
@@ -60,7 +60,7 @@ export interface IApartment {
     contactInfo?: string;
     district?: string;
     features?: string[];
-    source?: string;
+    source?: ApartmentSource;
     sourceUrl?: string;
     sourcePostId?: any;
     sourceId?: string;

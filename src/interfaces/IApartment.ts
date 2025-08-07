@@ -4,7 +4,8 @@ import {
   StatusType, 
   RoomTypes, 
   BathroomType, 
-  RenovationType 
+  RenovationType,
+  ApartmentSource 
 } from '../constants/property-types';
 
 /**
@@ -70,7 +71,7 @@ export interface IApartment {
   contactInfo?: string;
   district?: string;
   features?: string[];
-  source?: string; // The source of the listing, e.g., 'korter', 'facebook'
+  source?: ApartmentSource; // The source of the listing: telegram, korter, ss.ge, myhome, or other (empty string)
   sourceUrl?: string; // The URL of the original listing
   sourcePostId?: any; // Optional: to link to the original post
   sourceId?: string; // Alternative ID from the source
