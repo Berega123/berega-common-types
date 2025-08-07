@@ -16,5 +16,5 @@ export declare const AmenitiesOptions: readonly ["pool", "gym", "spa", "sauna", 
 export type AmenitiesOption = typeof AmenitiesOptions[number];
 export declare const BuildingTypes: readonly ["residential", "commercial", "mixed", "apartment", "monolithic", "brick", "panel", "block"];
 export type BuildingType = typeof BuildingTypes[number];
-export declare const ApartmentSources: readonly ["telegram", "korter", "ss.ge", "myhome", ""];
+export declare const ApartmentSources: readonly ["telegram", "korter", "ss", "myhome", "facebook", ""];
 export type ApartmentSource = typeof ApartmentSources[number];

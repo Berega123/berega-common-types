@@ -150,8 +150,9 @@ export type BuildingType = typeof BuildingTypes[number];
 export const ApartmentSources = [
   'telegram',
   'korter',
-  'ss.ge',
+  'ss',
   'myhome',
+  'facebook',
   '', // other (empty string)
 ] as const;
 

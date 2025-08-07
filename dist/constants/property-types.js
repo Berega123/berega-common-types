@@ -126,7 +126,8 @@ exports.BuildingTypes = [
 exports.ApartmentSources = [
     'telegram',
     'korter',
-    'ss.ge',
+    'ss',
     'myhome',
+    'facebook',
     '', // other (empty string)
 ];
