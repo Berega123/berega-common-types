@@ -54,7 +54,7 @@ export interface IApartment {
   building: string | object; // ObjectId reference to EstateBuilding
   author: string | object; // ObjectId reference to User
   developer?: string | object; // ObjectId reference to Developer
-  duplicateOf?: string | object; // ObjectId reference to Apartment
+  duplicateOf?: string | object | object[]; // ObjectId reference(s) to Apartment
   oldDataAuthor?: string;
   oldDataId?: string;
   oldData?: string;
