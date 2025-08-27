@@ -12,13 +12,14 @@ export interface IUser {
     contactTelegram?: string;
     contactWhatsapp?: string;
     contactViber?: string;
+    contactSite?: string;
     image?: string;
     description?: string;
-    rating?: number;
-    data?: string;
-    refreshTokens?: string[];
-    role?: string;
-    status?: string;
-    createdAt?: Date | string;
-    updatedAt?: Date | string;
+    rating: number;
+    data: string;
+    refreshTokens: string[];
+    role: string;
+    status: string;
+    createdAt: Date | string;
+    updatedAt: Date | string;
 }
