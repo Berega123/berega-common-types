@@ -16,6 +16,7 @@ export interface IUser {
     image?: string;
     description?: string;
     rating: number;
+    objectNumber: string;
     data: string;
     refreshTokens: string[];
     role: string;

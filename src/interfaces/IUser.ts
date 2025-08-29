@@ -16,6 +16,7 @@ export interface IUser {
   image?: string;
   description?: string;
   rating: number; // Has default value of 0 in schema
+  objectsNumber: string;
   data: string; // Has default value of '' in schema
   refreshTokens: string[]; // Has default value of [] in schema
   role: string; // Has default value of 'user' in schema
