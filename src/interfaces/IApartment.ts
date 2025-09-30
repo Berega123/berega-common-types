@@ -82,6 +82,12 @@ export interface IApartment {
   gym?: boolean;
   sellerType?: string;
   
+  // Special categories
+  promotions?: boolean;
+  forInvestors?: boolean;
+  urgentSale?: boolean;
+  hotOffers?: boolean;
+  
   // Optional fields for compatibility/external sources
   currency?: string;
   city_code?: string;

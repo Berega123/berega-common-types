@@ -70,6 +70,10 @@ export interface IApartment {
     bbqArea?: boolean;
     gym?: boolean;
     sellerType?: string;
+    promotions?: boolean;
+    forInvestors?: boolean;
+    urgentSale?: boolean;
+    hotOffers?: boolean;
     currency?: string;
     city_code?: string;
     country_code?: string;
