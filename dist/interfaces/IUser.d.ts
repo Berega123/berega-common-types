@@ -15,12 +15,14 @@ export interface IUser {
     contactSite?: string;
     image?: string;
     description?: string;
+    isRealtor?: boolean;
     rating: number;
-    objectNumber: string;
+    objectsNumber: string;
     data: string;
     refreshTokens: string[];
     role: string;
     status: string;
+    refererId?: string;
     createdAt: Date | string;
     updatedAt: Date | string;
 }

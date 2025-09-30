@@ -64,6 +64,24 @@ export interface IApartment {
   createdAt?: Date | string;
   updatedAt?: Date | string;
   
+  // Additional structured fields aligned with DTOs
+  balcony?: string;
+  elevator?: string;
+  parking?: string;
+  gas?: boolean;
+  waterSupply?: string;
+  sewerage?: string;
+  schoolNearby?: boolean;
+  kindergartenNearby?: boolean;
+  security?: boolean;
+  pool?: boolean;
+  rooftopTerrace?: boolean;
+  playground?: boolean;
+  concierge?: boolean;
+  bbqArea?: boolean;
+  gym?: boolean;
+  sellerType?: string;
+  
   // Optional fields for compatibility/external sources
   currency?: string;
   city_code?: string;

@@ -15,12 +15,14 @@ export interface IUser {
   contactSite?: string;
   image?: string;
   description?: string;
+  isRealtor?: boolean;
   rating: number; // Has default value of 0 in schema
   objectsNumber: string;
   data: string; // Has default value of '' in schema
   refreshTokens: string[]; // Has default value of [] in schema
   role: string; // Has default value of 'user' in schema
   status: string; // Has default value of 'active' in schema
+  refererId?: string;
   createdAt: Date | string; // Has default value of Date.now in schema
   updatedAt: Date | string; // Has default value of Date.now in schema
 } 
