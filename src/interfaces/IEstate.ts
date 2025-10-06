@@ -5,13 +5,12 @@ import { PropertyType, DealType, StatusType } from '../constants/property-types'
  */
 export interface IEstate {
   _id?: string;
+  identifier?: string;
   title: string;
   description: string;
   address: string;
   city?: string;
   country?: string;
-  city_code?: string;
-  country_code?: string;
   coordinates: number[];
   price_from?: number;
   price_to?: number;
@@ -19,15 +18,34 @@ export interface IEstate {
   price_sqm_to?: number;
   price?: number;
   price_sqm?: number;
+  commission?: number;
   contactPhone?: string;
+  contactTelegram?: string;
+  contactWhatsapp?: string;
   area?: number;
   plot: string;
+  landType?: string;
   propertyType?: PropertyType;
   dealType?: DealType;
   status?: StatusType;
   isComplex?: boolean;
   isNewBuild?: boolean;
+  available?: boolean;
+  developer?: string | object; // ObjectId reference to Developer
+  electricityOnPlot?: string;
+  gasConnected?: string;
+  roadType?: string;
+  amenities?: string[];
+  tags?: string[];
+  developmentCompleteDate?: Date | string;
+  developmentStage?: string;
+  buildingClass?: string;
+  coastline?: string;
+  elevatorTypes?: string[];
+  paymentTypes?: string[];
+  videoUrl?: string;
   images?: string[];
+  documents?: string[];
   author?: string | object; // ObjectId reference to User
   oldDataAuthor?: string;
   oldDataId?: string;

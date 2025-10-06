@@ -27,6 +27,7 @@ export interface IEstateBuilding {
   buildingType?: BuildingType;
   buildingClass?: string;
   coastline?: string;
+  wallType?: string;
   propertyType?: PropertyType;
   dealType?: DealType;
   status?: StatusType;
@@ -36,12 +37,15 @@ export interface IEstateBuilding {
   tags?: string[];
   amenities?: string[];
   images?: string[];
+  documents?: string[];
   estate: string | object; // ObjectId reference to Estate
   author: string | object; // ObjectId reference to User
   developer?: string | object; // ObjectId reference to Developer
+  entryCount?: number;
   commission?: number;
-  developmentComplete?: Date | string;
+  developmentCompleteDate?: Date | string;
   developmentStage?: string;
+  floorPlans?: string[];
   oldDataAuthor?: string;
   oldDataId?: string;
   oldData?: string;

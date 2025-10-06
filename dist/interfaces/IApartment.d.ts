@@ -41,6 +41,7 @@ export interface IApartment {
     dealType?: DealType;
     status?: StatusType;
     images?: string[];
+    documents?: string[];
     estate: string | object;
     building: string | object;
     author: string | object;

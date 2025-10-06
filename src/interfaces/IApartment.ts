@@ -50,6 +50,7 @@ export interface IApartment {
   dealType?: DealType;
   status?: StatusType;
   images?: string[];
+  documents?: string[];
   estate: string | object; // ObjectId reference to Estate
   building: string | object; // ObjectId reference to EstateBuilding
   author: string | object; // ObjectId reference to User
