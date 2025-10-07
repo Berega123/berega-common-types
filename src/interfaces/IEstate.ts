@@ -28,6 +28,7 @@ export interface IEstate {
   propertyType?: PropertyType;
   dealType?: DealType;
   status?: StatusType;
+  totalFloors?: number;
   isComplex?: boolean;
   isNewBuild?: boolean;
   available?: boolean;
