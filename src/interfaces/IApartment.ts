@@ -82,6 +82,7 @@ export interface IApartment {
   bbqArea?: boolean;
   gym?: boolean;
   sellerType?: string;
+  view?: string;
   
   // Special categories
   promotions?: boolean;

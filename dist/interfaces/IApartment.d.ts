@@ -71,6 +71,7 @@ export interface IApartment {
     bbqArea?: boolean;
     gym?: boolean;
     sellerType?: string;
+    view?: string;
     promotions?: boolean;
     forInvestors?: boolean;
     urgentSale?: boolean;
