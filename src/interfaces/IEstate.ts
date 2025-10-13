@@ -18,39 +18,41 @@ export interface IEstate {
   price_sqm_to?: number;
   price?: number;
   price_sqm?: number;
-  commission?: number;
+  totalFloors?: number;
   contactPhone?: string;
   contactTelegram?: string;
   contactWhatsapp?: string;
   area?: number;
   plot: string;
-  landType?: string;
   propertyType?: PropertyType;
+  landType?: string;
   dealType?: DealType;
   status?: StatusType;
-  totalFloors?: number;
   isComplex?: boolean;
   isNewBuild?: boolean;
-  available?: boolean;
+  images?: string[];
+  documents?: string[];
+  tags?: string[];
+  amenities?: string[];
+  author?: string | object; // ObjectId reference to User
   developer?: string | object; // ObjectId reference to Developer
+  commission?: number;
   electricityOnPlot?: string;
   gasConnected?: string;
   roadType?: string;
-  amenities?: string[];
-  tags?: string[];
-  developmentCompleteDate?: Date | string;
+  developmentCompleteDate?: Date;
   developmentStage?: string;
   buildingClass?: string;
   coastline?: string;
+  videoUrl?: string;
   elevatorTypes?: string[];
   paymentTypes?: string[];
-  videoUrl?: string;
-  images?: string[];
-  documents?: string[];
-  author?: string | object; // ObjectId reference to User
   oldDataAuthor?: string;
   oldDataId?: string;
   oldData?: string;
-  createdAt?: Date | string;
-  updatedAt?: Date | string;
+  analyticsViews?: number;
+  analyticsFavorites?: number;
+  rating?: number;
+  createdAt?: Date;
+  updatedAt?: Date;
 } 

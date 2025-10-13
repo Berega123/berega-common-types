@@ -55,15 +55,15 @@ export interface IApartment {
   building: string | object; // ObjectId reference to EstateBuilding
   author: string | object; // ObjectId reference to User
   developer?: string | object; // ObjectId reference to Developer
-  duplicateOf?: string | object | object[]; // ObjectId reference(s) to Apartment
+  duplicateOf?: any; // ObjectId reference(s) to Apartment
   oldDataAuthor?: string;
   oldDataId?: string;
   oldData?: string;
   analyticsViews?: number;
   analyticsFavorites?: number;
   commission?: number;
-  createdAt?: Date | string;
-  updatedAt?: Date | string;
+  createdAt?: Date;
+  updatedAt?: Date;
   
   // Additional structured fields aligned with DTOs
   balcony?: string;
@@ -82,7 +82,9 @@ export interface IApartment {
   bbqArea?: boolean;
   gym?: boolean;
   sellerType?: string;
-  view?: string;
+  viewType?: string;
+  roadType?: string;
+  wallType?: string;
   
   // Special categories
   promotions?: boolean;

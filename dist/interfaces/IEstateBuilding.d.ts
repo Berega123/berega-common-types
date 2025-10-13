@@ -42,12 +42,12 @@ export interface IEstateBuilding {
     developer?: string | object;
     entryCount?: number;
     commission?: number;
-    developmentCompleteDate?: Date | string;
+    developmentCompleteDate?: Date;
     developmentStage?: string;
     floorPlans?: string[];
     oldDataAuthor?: string;
     oldDataId?: string;
     oldData?: string;
-    createdAt?: Date | string;
-    updatedAt?: Date | string;
+    createdAt?: Date;
+    updatedAt?: Date;
 }
