@@ -5,7 +5,8 @@ import {
   RoomTypes, 
   BathroomType, 
   RenovationType,
-  ApartmentSource 
+  ApartmentSource,
+  ViewType
 } from '../constants/property-types';
 
 /**
@@ -82,7 +83,7 @@ export interface IApartment {
   bbqArea?: boolean;
   gym?: boolean;
   sellerType?: string;
-  viewType?: string;
+  viewType?: ViewType;
   roadType?: string;
   wallType?: string;
   

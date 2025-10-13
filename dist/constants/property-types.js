@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ApartmentSources = exports.BuildingTypes = exports.AmenitiesOptions = exports.TagOptions = exports.RenovationTypes = exports.BathroomTypes = exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
+exports.ApartmentSources = exports.ViewTypes = exports.BuildingTypes = exports.AmenitiesOptions = exports.TagOptions = exports.RenovationTypes = exports.BathroomTypes = exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
 exports.PropertyTypes = [
     'apartment',
     'house',
@@ -121,6 +121,13 @@ exports.BuildingTypes = [
     'brick',
     'panel',
     'block',
+];
+// View types
+exports.ViewTypes = [
+    'seaview',
+    'mountainview',
+    'parkview',
+    'unknown'
 ];
 // Apartment sources
 exports.ApartmentSources = [

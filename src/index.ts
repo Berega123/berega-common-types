@@ -17,7 +17,8 @@ export {
   TagOptions, 
   AmenitiesOptions, 
   BuildingTypes,
-  ApartmentSources 
+  ApartmentSources,
+  ViewTypes
 } from './constants/property-types';
 
 // Export types
@@ -31,5 +32,6 @@ export type {
   TagOption, 
   AmenitiesOption, 
   BuildingType,
-  ApartmentSource 
+  ApartmentSource,
+  ViewType
 } from './constants/property-types';

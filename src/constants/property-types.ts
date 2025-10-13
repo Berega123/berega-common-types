@@ -146,6 +146,16 @@ export const BuildingTypes = [
 
 export type BuildingType = typeof BuildingTypes[number];
 
+// View types
+export const ViewTypes = [
+  'seaview',
+  'mountainview',
+  'parkview',
+  'unknown'
+] as const;
+
+export type ViewType = typeof ViewTypes[number];
+
 // Apartment sources
 export const ApartmentSources = [
   'telegram',
