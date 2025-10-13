@@ -127,6 +127,7 @@ exports.ViewTypes = [
     'seaview',
     'mountainview',
     'parkview',
+    'cityview',
     'unknown'
 ];
 // Apartment sources

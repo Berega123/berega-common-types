@@ -151,6 +151,7 @@ export const ViewTypes = [
   'seaview',
   'mountainview',
   'parkview',
+  'cityview',
   'unknown'
 ] as const;
 
