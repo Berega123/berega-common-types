@@ -45,6 +45,7 @@ export interface IEstateBuilding {
     developmentCompleteDate?: Date;
     developmentStage?: string;
     floorPlans?: string[];
+    apartmentsPerFloor?: number;
     oldDataAuthor?: string;
     oldDataId?: string;
     oldData?: string;
