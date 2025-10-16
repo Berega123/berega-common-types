@@ -28,6 +28,7 @@ export interface IApartment {
     contactTelegram?: string;
     contactWhatsapp?: string;
     floor?: number;
+    floorPosition?: number;
     area?: number;
     livingArea?: number;
     kitchenArea?: number;
