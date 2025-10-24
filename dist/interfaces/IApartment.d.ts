@@ -29,6 +29,9 @@ export interface IApartment {
     contactWhatsapp?: string;
     floor?: number;
     floorPosition?: number;
+    floorPlanTagId: {
+        type: String;
+    };
     area?: number;
     livingArea?: number;
     kitchenArea?: number;

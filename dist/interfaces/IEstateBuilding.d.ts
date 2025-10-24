@@ -20,6 +20,7 @@ export interface IEstateBuilding {
     plot: string;
     height: number;
     floors?: number;
+    floorPlanTags: unknown[];
     totalFloors?: number;
     buildingYear?: number;
     ceilingHeight?: number;
