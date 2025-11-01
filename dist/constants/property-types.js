@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.ApartmentSources = exports.ViewTypes = exports.BuildingTypes = exports.AmenitiesOptions = exports.TagOptions = exports.RenovationTypes = exports.BathroomTypes = exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
+exports.UserSources = exports.ApartmentSources = exports.ViewTypes = exports.BuildingTypes = exports.AmenitiesOptions = exports.TagOptions = exports.RenovationTypes = exports.BathroomTypes = exports.RoomTypes = exports.StatusTypes = exports.DealTypes = exports.PropertyTypes = void 0;
 exports.PropertyTypes = [
     'apartment',
     'house',
@@ -138,4 +138,12 @@ exports.ApartmentSources = [
     'myhome',
     'facebook',
     '', // other (empty string)
+];
+// User sources
+exports.UserSources = [
+    'korter',
+    'ss',
+    'myhome',
+    'telegram',
+    'unknown',
 ];

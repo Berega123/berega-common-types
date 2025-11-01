@@ -168,3 +168,14 @@ export const ApartmentSources = [
 ] as const;
 
 export type ApartmentSource = typeof ApartmentSources[number]; 
+
+// User sources
+export const UserSources = [
+  'korter',
+  'ss',
+  'myhome',
+  'telegram',
+  'unknown',
+] as const;
+
+export type UserSource = typeof UserSources[number];

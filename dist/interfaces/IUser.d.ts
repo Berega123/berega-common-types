@@ -1,6 +1,7 @@
 /**
  * User interface that matches NestJS/Mongoose User schema
  */
+import { UserSource } from '../constants/property-types';
 export interface IUser {
     _id?: string;
     username: string;
@@ -22,6 +23,7 @@ export interface IUser {
     refreshTokens: string[];
     role: string;
     status: string;
+    source?: UserSource;
     refererId?: string;
     createdAt: Date | string;
     updatedAt: Date | string;

@@ -20,3 +20,5 @@ export declare const ViewTypes: readonly ["seaview", "mountainview", "parkview",
 export type ViewType = typeof ViewTypes[number];
 export declare const ApartmentSources: readonly ["telegram", "korter", "ss", "myhome", "facebook", ""];
 export type ApartmentSource = typeof ApartmentSources[number];
+export declare const UserSources: readonly ["korter", "ss", "myhome", "telegram", "unknown"];
+export type UserSource = typeof UserSources[number];
