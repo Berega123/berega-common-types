@@ -21,6 +21,8 @@ export interface IUser {
   objectsNumber: string;
   data: string; // Has default value of '' in schema
   refreshTokens: string[]; // Has default value of [] in schema
+  cities: string[];
+  countries: string[];
   role: string; // Has default value of 'user' in schema
   status: string; // Has default value of 'active' in schema
   source?: UserSource;

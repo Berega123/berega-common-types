@@ -21,6 +21,8 @@ export interface IUser {
     objectsNumber: string;
     data: string;
     refreshTokens: string[];
+    cities: string[];
+    countries: string[];
     role: string;
     status: string;
     source?: UserSource;
